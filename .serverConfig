@@ -1,0 +1,11 @@
+# Root Dir
+./www
+
+# Root File
+index.html
+
+#port
+8080
+
+#end
+#Dont change order or position
