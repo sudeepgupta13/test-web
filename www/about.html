@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Servidor WEB - Michel Gomes</title>
+    <style>
+        body {
+            background-color: #f0f0f5;
+            color: #333;
+            font-family: "Arial", sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            color: #222;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        h4 {
+            color: #666;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            width: 70%;
+            margin: 30px auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .link-box {
+            background-color: #007bff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .link-box a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .form-box {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            width: 50%;
+            margin: 20px auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"], input[type="submit"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 80%;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+            color: #ffffff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        .projects {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            width: 80%;
+            margin: 20px auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .project-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .project-item img {
+            width: 150px;
+            height: auto;
+            border-radius: 5px;
+            margin-right: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .project-info h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .project-info p {
+            margin: 5px 0 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <br><br>
+    <center><img src="./nyan.gif" alt="Nyan Cat"></center>
+
+    <div class="container">
+        <h2>Personal Home Page: Michel Gomes</h2>
+        <h4>📧 michels@alunos.utfpr.edu.br</h4>
+        <p><b>Graduado em Ciência da Computação e mestrando em Aplicações Inteligentes pela UTFPR.</b> <br>
+        Programador full stack e pai de bot. No Núcleo, trabalha com desenvolvimento de aplicações e projetos de dados.</p>
+        <p><i>Just a regular guy.</i> <br>
+        I do black magic with computers!<br>
+        Building a cyberspace in my garage!!1!</p>
+
+        <div class="link-box">
+            <b><a href="/index.html">Voltar</a></b>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="projects">
+        <h2>Projetos</h2>
+
+        <div class="project-item">
+            <img src="https://myfailcode.wordpress.com/wp-content/uploads/2020/03/cafeina.png" alt="Cafeína Compilada">
+            <div class="project-info">
+                <h3>Cafeína Compilada</h3>
+                <p>Podcast sobre ciência e tecnologia, desmistificando a computação e despertando o interesse do público.</p>
+                <p><a href="http://cafeinacompilada.cm.utfpr.edu.br" target="_blank">Acesse o projeto</a></p>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <img src="https://myfailcode.wordpress.com/wp-content/uploads/2020/03/image-11.png" alt="Robótica">
+            <div class="project-info">
+                <h3>Robótica aplicada à Disseminação de Conceitos de Programação</h3>
+                <p>Ensino de lógica e programação através de robôs Lego Mindstorms, com abordagem lúdica e interativa.</p>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <img src="https://lh4.googleusercontent.com/AvxDQsu34F4I1uoqNreOUDWr6GuB91svgrS_Rl_RZ85MZ2lotSh4C-7dSWaWQ4D97uXMJFHgB3VRoYzjg0pET0MIyh6pYLWVCqojdsUyfLy2j_pcZN4fuhCZXcunYM0pk61z4sRt" alt="Apresentação">
+            <div class="project-info">
+                <h3>Apresentação no Teatro Marista - Maringá, 12/09/2019</h3>
+                <p>Evento de divulgação científica sobre computação e automação no ensino.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="form-box">
+        <h3>Testando Método POST:</h3>
+        <form action="./about.html" method="post">
+            Nome:<br>
+            <input type="text" name="nome" value="Mickey"><br>
+            Sobrenome:<br>
+            <input type="text" name="sobrenome" value="Mouse"><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <br>
+
+    <div class="footer">
+        <p>Hi, I'm JMallone, a computer science student from Brazil 🇧🇷. <br>
+        Besides programming, I enjoy eating food and traveling. 😋</p>
+    </div>
+
+</body>
+</html>
